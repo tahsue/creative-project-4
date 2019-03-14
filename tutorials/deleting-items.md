@@ -6,7 +6,7 @@ The admin page should also have the ability to delete items. We'll setup the fro
 
 The trickiest part of deleting an item on the admin page is identifying which item you want to delete. We'll build an input that lets the administrator type a title, and then we'll use this to populate a dropdown menu they can choose from.
 
-Add this in `index.html`, at the end of the `admin` div:
+Add this in `admin.html`, at the end of the `admin` div:
 
 ```
 <div class="heading">
