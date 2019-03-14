@@ -83,7 +83,7 @@ Now add a computed property:
 
 ```
   computed: {
-    findTitle() {
+    suggestions() {
       return this.items.filter(item => item.title.toLowerCase().startsWith(this.findTitle.toLowerCase()));
     }
   },
