@@ -84,7 +84,7 @@ Once this is done, we post to `/api/items` to create the item in our museum, whi
 
 Once this is done, we get back a response that contains the item we added, so we store it in `addItem` and use that to display the item on the admin page, showing the user that the upload was successful.
 
-## Back End
+## Back End -- Uploading Photos
 
 On the back end, we're going to use a library called [multer]() to upload images. First, we need to configure multer in `server.js`:
 
@@ -137,6 +137,25 @@ app.post('/api/photos', upload.single('photo'), async (req, res) => {
 This sets up a REST API endpoint at `/api/photos`. A POST to this endpoint will first be given to the multer middleware. It will expect to find a file labeled with the `photo` property. This property should match what you used when creating the `formData` object. The multer middleware will automatically upload this file and store it in the file system. It will setup `req.file` to contain information about the uploaded file.
 
 We check that the file was indeed uploaded and then return the full path to the file.
+
+## Back End -- creating items
+
+```
+// Create a new item in the museum: takes a title and a path to an image.
+app.post('/api/items', async (req, res) => {
+  const item = new Item({
+    title: req.body.title,
+    path: req.body.path,
+  });
+  try {
+    await item.save();
+    res.send(item);
+  } catch (error) {
+    console.log(error);
+    res.sendStatus(500);
+  }
+});
+```
 
 ## Testing
 
