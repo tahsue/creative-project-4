@@ -3,7 +3,8 @@
 Let's first setup node and install needed packages:
 
 ```
-nvm use stable npm init
+nvm use stable
+npm init
 npm install express mongoose multer
 ```
 
