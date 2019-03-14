@@ -9,7 +9,7 @@ The trickiest part of deleting an item on the admin page is identifying which it
 Add this in `admin.html`, at the end of the `admin` div:
 
 ```
-<div class="heading">
+    <div class="heading">
       <div class="circle">2</div>
       <h2>Edit/Delete an Item</h2>
     </div>
@@ -74,18 +74,17 @@ Now we need to calculate suggestions. First, add some more data properties:
 
 ```
     findTitle: "",
-    suggestions: [],
     findItem: null,
 ```
 
-We'll use `findTitle` for the title the administrator types in, `suggestions` for a list of items with a matching title, and `findItem` for the item they click on in the suggestions list.
+We'll use `findTitle` for the title the administrator types in and `findItem` for the item they click on in the suggestions list.
 
-Now add a watch function:
+Now add a computed property:
 
 ```
-  watch: {
-    findTitle(newValue, oldValue) {
-      this.suggestions = this.items.filter(item => item.title.toLowerCase().startsWith(this.findTitle.toLowerCase()));
+  computed: {
+    findTitle() {
+      return this.items.filter(item => item.title.toLowerCase().startsWith(this.findTitle.toLowerCase()));
     }
   },
 ```
