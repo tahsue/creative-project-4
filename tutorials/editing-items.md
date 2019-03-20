@@ -4,7 +4,7 @@ The admin page should also have the ability to edit items. We'll setup the front
 
 ## Front End HTML
 
-There is very little to do. :-) You'll notice we setup the HTML so that when we find an item we display an input field with the title, so it is already editable. All we need to do is add an edit button in `index.html` right after the delete button:
+There is very little to do. :-) You'll notice we setup the HTML so that when we find an item we display an input field with the title, so it is already editable. All we need to do is add an edit button in `admin.html` right after the delete button:
 
 ```
         <button @click="editItem(findItem)">Edit</button>
