@@ -76,7 +76,7 @@ The next step is to link this into the `sites-enabled` directory:
 
 ```
 cd ../sites-enabled
-sudo ln -s ../sites-available/lab4.chiamo.org .
+sudo ln -s ../sites-available/lab5.mydomain.com .
 ```
 
 You should be able to see that this is working properly:
@@ -88,7 +88,7 @@ ls -al
 You will see something like this:
 
 ```
-lrwxrwxrwx 1 root root   34 Mar 14 01:20 lab4.chiamo.org -> ../sites-available/lab4.chiamo.org
+lrwxrwxrwx 1 root root   34 Mar 14 01:20 lab5.mydomain.com -> ../sites-available/lab5.mydomain.com
 ```
 
 This shows that the file is linked correctly. You can also try using `cat` to view the file and make sure it looks right.
