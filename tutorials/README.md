@@ -2,16 +2,16 @@
 
 Introductory tutorials:
 
-1. [Installing Packages](/tutorials/installing-packages.md)
-1. [Adding Items](/tutorials/adding-items.md)
-1. [Displaying Items](/tutorials/displaying-items.md)
+* [Installing Packages](/tutorials/1-installing-packages.md)
+* [Adding Items](/tutorials/2-adding-items.md)
+* [Displaying Items](/tutorials/3-displaying-items.md)
 
 Additional functionality:
 
-1. [Deleting Items](/tutorials/deleting-items.md)
-1. [Editing Items](/tutorials/editing-items.md)
-1. [Item Descriptions](/tutorials/item-descriptions.md)
+* [Deleting Items](/tutorials/4-deleting-items.md)
+* [Editing Items](/tutorials/5-editing-items.md)
+* [Item Descriptions](/tutorials/6-item-descriptions.md)
 
 Running on Digital Ocean:
 
-1. [Digital Ocean](/tutorials/digital-ocean.md)
+* [Digital Ocean](/tutorials/7-digital-ocean.md)
