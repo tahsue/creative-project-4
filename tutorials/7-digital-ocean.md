@@ -209,7 +209,7 @@ We will use a Node library called
 running even if you log out.
 
 ```
-sudo npm install forever -g
+npm install forever -g
 ```
 
 Note that we use the `-g` option to install `forever` globally. This way it will
