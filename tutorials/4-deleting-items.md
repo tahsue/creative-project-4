@@ -49,7 +49,7 @@ item the user clicked on in the suggestions menu.
 
 ## Front End CSS
 
-Add this CSS to `About.vue` to style the suggestions:
+Add this CSS to `Admin.vue` to style the suggestions:
 
 ```css
 /* Suggestions */
