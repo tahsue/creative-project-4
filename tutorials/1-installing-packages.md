@@ -78,4 +78,4 @@ npm run serve
 You should be able to browse to `localhost:8080` and see the front end as it
 exists so far:
 
-![home page at the beginning](/screenshots/home-page-beginning)
+![home page at the beginning](/screenshots/home-page-beginning.png)
