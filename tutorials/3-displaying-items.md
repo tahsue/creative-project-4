@@ -164,7 +164,7 @@ properly, you should be able to restart the server:
 node server.js
 ```
 
-and then browse to localhost:3000 and see these items on the front page.
+and then browse to localhost:8080 and see these items on the front page.
 
 You should see something like this:
 
