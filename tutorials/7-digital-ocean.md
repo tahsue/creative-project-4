@@ -198,7 +198,7 @@ this with `control-c`.
 Build your public files:
 
 ```
-cd back-end
+cd front-end
 npm install
 npm run build
 ```
