@@ -157,11 +157,20 @@ git [PathToYourRepositoryOnGitHub]
 cd [RepoDirectory]
 ```
 
-## Fix your node configuration
+## Set up the back end
 
+First install the packages you will need:
 
-We setup node for your local machine. You need to make sure you configure
-`multer` so that it stores files in your public web server directory. For example:
+```
+cd back-end
+npm install
+```
+
+This will find all the packages in `package-lock.json` and install them into
+this directory.
+
+Now, edit `server.js`. We setup node for your local machine. You need to make sure you configure
+`multer` in `server.js` so that it stores files in your public web server directory. For example:
 
 ```
 const upload = multer({
@@ -174,18 +183,8 @@ const upload = multer({
 
 You need to change `dest` so that it points to the correct directory.
 
-## Setup Node
 
-Now install the packages you will need:
-
-```
-npm install
-```
-
-This will find all the packages in `package-lock.json` and install them into
-this directory.
-
-Make sure your server runs:
+Finally, make sure your server runs:
 
 ```
 node server.js
@@ -194,7 +193,15 @@ node server.js
 You just want to make sure it starts without errors. Kill it after you check
 this with `control-c`.
 
-## Setup your public files
+## Set up the front end
+
+Build your public files:
+
+```
+cd back-end
+npm install
+npm run build
+```
 
 Now copy your public files to `/var/www`. For example:
 
@@ -218,6 +225,7 @@ be available to all apps on our machine.
 You can run your server now with:
 
 ```
+cd back-end
 forever start server.js
 ```
 
