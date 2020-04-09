@@ -2,19 +2,20 @@
 <div id="app">
   <div class="header">
     <router-link to="/">
-      <div class="logo">
-        <img src="/ordinary.png">
-      </div>
     </router-link>
     <div class="title">
-      <h1>Museum of Ordinary Objects</h1>
+      <h1>Hello World, Meet Someone New!</h1>
+    </div>
+    <div class="nav-bar">
+      <router-link class="nav-button" to="/">Home</router-link>
+      <router-link class="nav-button" to="/admin">Create/Edit</router-link>
+      <router-link class="nav-button" to="/post">Post</router-link>
     </div>
   </div>
   <div class="content">
     <router-view />
   </div>
   <div class="footer">
-    <router-link to="/admin">Admin</router-link>
   </div>
 </div>
 </template>
@@ -36,8 +37,8 @@ body {
 .header {
   display: flex;
   padding: 10px 100px 0px 100px;
-  background-color: #5BDEFF;
-  color: #1C454F;
+  background-color: #348899;
+  color: black;
 }
 
 .title {
@@ -48,6 +49,22 @@ body {
   font-size: 30px;
 }
 
+.nav-bar {
+  padding: 30px 100px 0px 100px;
+}
+.nav-button {
+  color: white;
+  padding-left: 20px;
+  text-decoration: none;
+}
+
+.home-button {
+  margin-right: 20px;
+}
+.post-page {
+  margin-left: 20px;
+}
+
 .content {
   padding: 20px 100px;
   min-height: 500px;
@@ -55,9 +72,9 @@ body {
 
 /* Footer */
 .footer {
-  height: 50px;
+  min-height: 250px;
   padding: 20px 100px 0px 100px;
-  background: #e3e3e3;
+  background-color: #979C9C;
   font-size: 12px;
 }
 
